@@ -1,0 +1,107 @@
+﻿<Window x:Class="SharonWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharonWpf"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="350"
+        Width="525"
+        KeyDown="Window_KeyDown"
+        KeyUp="Window_KeyUp"
+        InputMethod.IsInputMethodEnabled="False">
+    <Grid Focusable="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20*" />
+        </Grid.ColumnDefinitions>
+        <ScrollViewer x:Name="ScrollLog"
+                      Focusable="False"
+                      Grid.RowSpan="3">
+            <TextBlock x:Name="TextLog" />
+        </ScrollViewer>
+        <ProgressBar x:Name="MeterSpeedLeft"
+                     Minimum="-1"
+                     Maximum="1"
+                     Orientation="Vertical"
+                     Focusable="False"
+                     Grid.Column="1"
+                     Grid.RowSpan="3" />
+        <ProgressBar x:Name="MeterSpeedRight"
+                     Minimum="-1"
+                     Maximum="1"
+                     Orientation="Vertical"
+                     Grid.Column="3"
+                     Focusable="False"
+                     Grid.RowSpan="3" />
+        <Rectangle Fill="Black"
+                   Grid.Row="1"
+                   Grid.Column="1" />
+        <Rectangle Fill="Black"
+                   Grid.Row="1"
+                   Grid.Column="3" />
+        <Grid Focusable="False"
+              Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ProgressBar x:Name="MeterArmMiddle"
+                         Minimum="27000"
+                         Maximum="33000"
+                         Focusable="False"
+                         ToolTip="{Binding Value, RelativeSource={RelativeSource Self}}" />
+
+            <ProgressBar x:Name="MeterArmLow"
+                         Minimum="27000"
+                         Maximum="33000"
+                         Focusable="False"
+                         Grid.Row="1"
+                         ToolTip="{Binding Value, RelativeSource={RelativeSource Self}}"  />
+        </Grid>
+        <ToggleButton x:Name="MeterHigh"
+                      Content="high"
+                      Grid.Column="2"
+                      Focusable="False"
+                      Grid.Row="2" />
+        <Button x:Name="ClearLog"
+                Content="Clear Log"
+                Grid.Column="4"
+                HorizontalAlignment="Left"
+                Margin="39.667,107,0,0"
+                VerticalAlignment="Top"
+                Click="ClearLog_Click"
+                Focusable="False"
+                Width="150" />
+        <Slider x:Name="slider_Spin"
+                Grid.Column="4"
+                Grid.Row="2"
+                Maximum="1" 
+                Value="0.6"
+                Margin="0,30,0,0"
+                Focusable="False"
+                TickFrequency="0.01"
+                VerticalAlignment="Top"
+                LargeChange="0.1"
+                SmallChange="0.01" />
+        <Slider x:Name="slider_Run"
+                Grid.Column="4"
+                Grid.Row="2"
+                Maximum="1"
+                TickFrequency="0.01"
+                Focusable="False"
+                Value="0.2"
+                VerticalAlignment="Top"
+                LargeChange="0.1"
+                SmallChange="0.01" />
+    </Grid>
+</Window>

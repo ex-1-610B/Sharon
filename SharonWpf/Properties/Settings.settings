@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SharonWpf.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="s1m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">29240</Value>
+    </Setting>
+    <Setting Name="s1l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">27604</Value>
+    </Setting>
+    <Setting Name="s2m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">28043</Value>
+    </Setting>
+    <Setting Name="s2l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">28823</Value>
+    </Setting>
+    <Setting Name="s3m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s3l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s4m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s4l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s5m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">30343</Value>
+    </Setting>
+    <Setting Name="s5l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">29283</Value>
+    </Setting>
+    <Setting Name="s6m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s6l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s7m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s7l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s8m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s8l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s9m" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="s9l" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hi</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
